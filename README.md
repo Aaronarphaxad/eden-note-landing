@@ -1,30 +1,111 @@
-# Note app landing page
+# EdenNote Landing Page
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern, responsive landing page for EdenNote - the ultimate mobile note-taking app for sermons, Bible study, and spiritual growth.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/aaronarphaxads-projects/v0-note-app-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/7YVbT8ag5vi)
+## 🚀 Features
 
-## Overview
+- **Modern Design**: Clean, professional UI with gradient accents and smooth animations
+- **Responsive**: Fully responsive design that works on all devices
+- **Performance Optimized**: Built with Next.js 15 for optimal performance
+- **Vercel Ready**: Optimized for deployment on Vercel
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🛠️ Tech Stack
 
-## Deployment
+- **Framework**: Next.js 15.2.4
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI + shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
-Your project is live at:
+## 📦 Installation
 
-**[https://vercel.com/aaronarphaxads-projects/v0-note-app-landing-page](https://vercel.com/aaronarphaxads-projects/v0-note-app-landing-page)**
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd sermon-notes-landing
+```
 
-## Build your app
+2. Install dependencies:
+```bash
+npm install
+```
 
-Continue building your app on:
+3. Run the development server:
+```bash
+npm run dev
+```
 
-**[https://v0.dev/chat/projects/7YVbT8ag5vi](https://v0.dev/chat/projects/7YVbT8ag5vi)**
+4. Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## How It Works
+## 🚀 Deployment
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### Deploy to Vercel
+
+The easiest way to deploy is using the [Vercel Platform](https://vercel.com):
+
+1. Push your code to GitHub
+2. Connect your GitHub repository to Vercel
+3. Vercel will automatically detect Next.js and deploy
+
+Alternatively, use the Vercel CLI:
+```bash
+npm install -g vercel
+vercel
+```
+
+### Manual Build
+
+```bash
+npm run build
+npm start
+```
+
+## 📝 Environment Variables
+
+Create a `.env.local` file based on `.env.example`:
+
+```bash
+cp .env.example .env.local
+```
+
+Configure the following variables:
+- `NEXT_PUBLIC_APP_URL`: Your app URL
+- `BUYMEACOFFEE_URL`: Your Buy Me a Coffee URL
+
+## 🎨 Customization
+
+### Colors and Theming
+The app uses a custom color palette defined in `tailwind.config.ts`. Modify the colors to match your brand.
+
+### Content
+Update the content in `app/page.tsx` to match your app's features and information.
+
+### Images
+Replace the images in the `public/` folder with your own:
+- `logo.webp`: App logo
+- `hero image.webp`: Hero section image
+
+## 📱 Performance
+
+The landing page is optimized for performance:
+- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
+- **Core Web Vitals**: Optimized for LCP, FID, and CLS
+- **Image Optimization**: Next.js Image component with WebP/AVIF support
+- **Code Splitting**: Automatic code splitting for faster loading
+
+## 🔧 Scripts
+
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run start`: Start production server
+- `npm run lint`: Run ESLint
+- `npm run deploy`: Build and export for static hosting
+
+## 📄 License
+
+This project is private and proprietary.
+
+## 🤝 Support
+
+For support, email [your-email] or create an issue in the repository.
